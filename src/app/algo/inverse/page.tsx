@@ -5,13 +5,12 @@ import { DropdownMenuTrigger, DropdownMenuLabel, DropdownMenuSeparator, Dropdown
 import { Button } from "@/components/ui/button"
 import Navbar from "@/components/navbar/navbar"
 
-
 export default function Component() {
   return (
     <div key="1" className="grid min-h-screen w-full lg:grid-cols-[280px_1fr]">
       <div className="hidden border-r lg:block">
         <div className="flex h-full max-h-screen flex-col gap-2">
-        <div className="flex h-[60px] items-center border-b px-6">
+          <div className="flex h-[60px] items-center border-b px-6">
             <Link className="flex items-center gap-2 font-semibold" href="/">
               <Package2Icon className="h-6 w-6" />
               <span>Linear Algebra Master</span>
@@ -46,31 +45,9 @@ export default function Component() {
         </header>
         <main className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-6">
           <div className="flex items-center">
-            <h1 className="font-semibold text-lg md:text-2xl">All Algorythms</h1>
+            <h1 className="font-semibold text-lg md:text-2xl">Inverse Matrix</h1>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            <Card className="rounded">
-              <CardContent className="flex flex-col gap-2 mt-5">
-                <CardTitle className="text-base font-semibold ">Find Determinant</CardTitle>
-                <CardDescription className="text-sm">
-                  Returns determinant of given matrix
-                </CardDescription>
-                <Button asChild size="sm" variant="outline" className="rounded w-[30%] mt-5">
-                  <Link href="/algo/determinant">Try</Link>
-                </Button>
-              </CardContent>
-            </Card>
-            <Card className="rounded">
-              <CardContent className="flex flex-col gap-2 mt-5">
-                <CardTitle className="text-base font-semibold ">Transpose Matrix</CardTitle>
-                <CardDescription className="text-sm">
-                  Transposes given matrix
-                </CardDescription>
-                <Button asChild size="sm" variant="outline" className="rounded w-[30%] mt-5">
-                  <Link href="/algo/determinant" className="rounded">Try</Link>
-                </Button>
-              </CardContent>
-            </Card>
           </div>
         </main>
       </div>

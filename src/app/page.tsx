@@ -29,7 +29,7 @@ export default function Component() {
             </p>
           </div>
           <div>
-            <Button asChild className = "rounded">
+            <Button asChild className = "rounded" variant="secondary">
               <Link href="/algo">Start</Link>
             </Button>
           </div>
